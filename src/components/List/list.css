@@ -1,0 +1,60 @@
+.list-wrapper {
+  width: 41%;
+  border: 1px solid lightgray;
+  border-bottom: 0px solid transparent;
+}
+
+.list-profiles {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  background-color: rgb(42, 63, 250);
+}
+
+.profiles__loading {
+  position: relative;
+}
+
+.profiles__loading::after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+
+  transform: translateY(-50%);
+}
+
+.profiles__loading-list {
+  height: 50px;
+}
+
+.profiles__loading-list::after {
+  background-image: url('../../img/loading-list.svg');
+}
+
+.profiles__loading-details::after {
+  background-image: url('../../img/loading-details.svg');
+}
+
+.profiles__text {
+  position: relative;
+  z-index: 2;
+  padding: 14px 20px;
+  line-height: 140%;
+}

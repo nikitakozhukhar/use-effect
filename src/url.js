@@ -1,0 +1,1 @@
+export const REACT_APP_PROFILES_DATA_URL = 'https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data'
